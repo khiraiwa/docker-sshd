@@ -11,4 +11,4 @@ ssh-keygen -A
 echo "root:$root_pw" | chpasswd
 
 # do not detach (-D), log to stderr (-e), passthrough other arguments
-exec /usr/sbin/sshd -d -D -e "$@"
+exec /usr/sbin/sshd -D -e "$@"
